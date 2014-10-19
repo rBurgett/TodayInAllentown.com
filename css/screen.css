@@ -67,10 +67,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* .header-container {
-	width: 100%;
-} */
-/* line 11, ../sass/screen.scss */
+/* Begin Variables */
+/* End Variables */
+/* Begin Classes */
+/* line 13, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* line 16, ../sass/screen.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 19, ../sass/screen.scss */
+h2 {
+  font-size: 2.5em;
+}
+
+/* line 22, ../sass/screen.scss */
+h3 {
+  font-size: 2em;
+}
+
+/* line 25, ../sass/screen.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 28, ../sass/screen.scss */
 .header-image {
   max-width: 90%;
   display: block;
@@ -80,9 +105,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 10px;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .infobar {
   width: 100%;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 20px;
   background-color: #000000;
 }
+
+/* line 43, ../sass/screen.scss */
+.weather-note {
+  text-align: center;
+  color: #FFFF00;
+}
+
+/* End Classes */
