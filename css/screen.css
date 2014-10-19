@@ -66,3 +66,23 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* .header-container {
+	width: 100%;
+} */
+/* line 11, ../sass/screen.scss */
+.header-image {
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 19, ../sass/screen.scss */
+.infobar {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+}
