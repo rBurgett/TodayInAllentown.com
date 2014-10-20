@@ -2,5 +2,6 @@
 /* global $ */
 
 $(document).ready(function () {
+	'use strict';
 	$('#jsnote').hide();
 });

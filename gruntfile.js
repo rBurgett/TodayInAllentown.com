@@ -4,6 +4,9 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		jshint: {
+				all: ['js/main.js']
+		},
 		concat: {
 			dist: {
 				src: [
@@ -23,7 +26,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: ['js/*.js'],
-				tasks: ['concat', 'uglify'],
+				tasks: ['jshint', 'concat', 'uglify'],
 				options: {
 					spawn: false,
 				},
@@ -32,11 +35,12 @@ module.exports = function(grunt) {
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
+	grunt.loadNpmTasks('grunt-contrib-jshint');	
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
 
 };
