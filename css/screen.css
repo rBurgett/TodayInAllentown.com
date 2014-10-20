@@ -68,6 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Begin Variables */
+
+$post-container-padding: 10;
+$post-picture-container-width: 150;
+$post-width: 600;
+$post-contents-margin: 10;
+
 /* End Variables */
 /* Begin Classes */
 /* line 13, ../sass/screen.scss */
@@ -118,6 +124,17 @@ h4 {
 .weather-note {
   text-align: center;
   color: #FFFF00;
+}
+
+.posts-container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.post-container {
+
 }
 
 /* End Classes */
