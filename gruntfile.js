@@ -17,6 +17,18 @@ module.exports = function(grunt) {
 			dest: 'js/build/production.js'
 			}
 		},
+		jasmine: {
+			pivotal: {
+				src: 'js/main.js',
+				options: {
+					vendor: [
+						'js/jquery-1.11.1.min.js',
+						'js/handlebars.min.js'
+					],
+					specs: 'tests/jasmineSpecs.js',
+				}
+			}
+		},
 		uglify: {
 			build: {
 				src: 'js/build/production.js',
@@ -36,11 +48,12 @@ module.exports = function(grunt) {
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
 	grunt.loadNpmTasks('grunt-contrib-jshint');	
+	grunt.loadNpmTasks('grunt-contrib-jasmine');	
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'jasmine', 'concat', 'uglify']);
 
 };
