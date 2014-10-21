@@ -9,16 +9,16 @@ var GFeed = {
 	},
 	init : function(feedsArray) {
 		'use strict';
-		this._feedList = feeds || [];
+		this._feedList = feedsArray || [];
 		return this;
-	},
-	addFeed : function (feed) {
-		'use strict';
-		this._feedList.push(feed);
 	},
 	feedList : function () {
 		'use strict';
 		return this._feedList;
+	},
+	addFeed : function (feed) {
+		'use strict';
+		this._feedList.push(feed);
 	}
 };
 var gFeed = GFeed.create([

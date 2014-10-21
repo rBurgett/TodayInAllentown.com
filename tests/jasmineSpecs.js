@@ -10,4 +10,19 @@ describe("gFeed object", function() {
     it("should exist", function() {
         expect(gFeed).toBeTruthy();
     });
+	describe("feedList method", function() {
+		it("should return the feedList array", function() {
+			expect(gFeed.feedList()[0]).toBeTruthy();
+		});
+	});
+	describe("addFeed method", function() {
+		it("should add a feed to the feed list", function() {
+			var feedLength;
+			var lastFeed;
+			gFeed.addFeed("here is a new feed");
+			feedLength = gFeed.feedList().length;
+			lastFeed = feedLength - 1;
+			expect(gFeed.feedList()[lastFeed]).toEqual("here is a new feed");
+		});
+	});
 });
