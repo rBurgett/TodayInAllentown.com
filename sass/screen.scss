@@ -4,27 +4,18 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "_normalize";
+@import "_variables";
+@import "_color_and_bgs";
+@import "_typography";
+@import "_layout";
+@import "_mediaqueries";
 
-/* Begin Variables */
-
-/* End Variables */
-
-/* Begin Classes */
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-h1 {
-	font-size: 3em;
-}
-h2 {
-	font-size: 2.5em;
-}
-h3 {
-	font-size: 2em;
-}
-h4 {
-	font-size: 1.5em;
-}
+
+/*
 .header-image {
 	max-width: 90%;
 	display: block;
@@ -44,4 +35,5 @@ h4 {
 	text-align: center;
 	color: #FFFF00;
 }
-/* End Classes */
+
+*/
