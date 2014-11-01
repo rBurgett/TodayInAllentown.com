@@ -4,6 +4,7 @@ $('#jsnote').hide();
 
 Handlebars.registerHelper('date', function(rawDate) {
 	var formattedDate = new Date(rawDate).toLocaleString();
+	return formattedDate;
 });
 
 google.load("feeds", "1");
