@@ -34,34 +34,58 @@ this.Handlebars=function(){var a=function(){"use strict";function a(a){this.stri
 /* jshint undef: true, unused: true, strict: true, browser: true, devel: true */
 /* global $ */
 
-var TIA = {
+var GFeed = {
 	_feedList : [],
-	create : function (feeds) {
+	create : function (feedsArray) {
 		'use strict';
-		return Object.create(TIA).init(feeds);
+		return Object.create(GFeed).init(feedsArray);
 	},
-	init : function(feeds) {
+	init : function(feedsArray) {
 		'use strict';
-		this._feedList = feeds || [];
+		this._feedList = feedsArray || [];
 		return this;
+	},
+	feedList : function () {
+		'use strict';
+		return this._feedList;
 	},
 	addFeed : function (feed) {
 		'use strict';
 		this._feedList.push(feed);
 	},
-	feedList : function () {
+	getFeeds : function (num) {
 		'use strict';
-		return this._feedList;
+		var feeds = this._feedList;
+		console.log(this._feedList);
+		var feed;
+		var feedsData = [];
+		var i;
+		for (i = 0; i < feeds.length; i = i + 1) {
+			feed = new google.feeds.Feed(feeds[i]);
+			feed.load(function(feedData) {
+				if (!result.error) {
+					console.log(feedData);
+				}
+			};
+		}
+//		console.log(feedsData);
 	}
 };
-var tIA = TIA.create([
+var gFeed = GFeed.create([
 		'http://www.wfmz.com/news/news-regional-lehighvalley/132502?format=rss_2.0&view=feed',
 		'http://www.mcall.com/news/local/rss2.0.xml',
 		'http://blog.lehighvalleylive.com/lvnews_impact/atom.xml'
 	]);
-console.log(tIA.feedList());
+//console.log(gFeed.feedList());
 
 $(document).ready(function () {
 	'use strict';
 	$('#jsnote').hide();
+	console.log('Hi!');
+	google.load('feeds', '1');
+	google.setOnLoadCallback(
+		gFeed.getFeeds(20, function() {
+			
+		})
+	);
 });
