@@ -12,6 +12,11 @@
 	-webkit-transition: $transition;  /* For Safari 3.1 to 6.0 */
 	transition: $transition;
 }
+@mixin transform ($transform) {
+    -ms-transform: $transform; /* IE 9 */
+    -webkit-transform: $transform; /* Chrome, Safari, Opera */
+    transform: $transform;
+}
 @mixin image ($image) {
 	background-image: $image;
 	background-position: center top;
