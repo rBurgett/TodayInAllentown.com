@@ -81,7 +81,7 @@ $(document).ready(function () {
 		Handlebars.make({
 			'templateId' : 'postTemplate',
 			'data' : data,
-			'htmlId' : 'posts-container'
+			'htmlId' : 'postsContainer'
 		});
 	}));
 });
