@@ -1,5 +1,5 @@
-/* jshint undef: true, unused: true, strict: true, browser: true, devel: true */
-/* global $ */
+/* jshint loopfunc: true, undef: true, unused: true, browser: true, devel: true */
+/* global $, Handlebars, google */
 
 $('#jsnote').hide();
 
@@ -76,7 +76,7 @@ var GFeed = {
 						});
 					}
 					if (count === feeds.length - 1) {
-						var sortedData = feedsData.sort(function(a,b){return b.date-a.date});
+						var sortedData = feedsData.sort(function(a,b){return b.date-a.date;});
 						callback(sortedData);
 					}
 					count = count + 1;
