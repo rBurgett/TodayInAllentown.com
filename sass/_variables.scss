@@ -1,14 +1,21 @@
 $default_font: 'Open Sans', Arial, Helvetica, sans-serif;
+$body-font-size: 1;
 $header_font: Helvetica, sans-serif;
+$header-font-size: 1.25;
+
 $default_color: #000000;
 $padding: .5;
-$WFMZbackground: #FFFF66;
+
+
+
+$WFMZbackground: #FFFF88;
 $WFMZbackground-hover: #FFFF00;
 $MCALLbackground: #EEEEEE;
 $MCALLbackground-hover: #CCCCCC;
 $LVLbackground: #FFAAAA;
 $LVLbackground-hover: #FF7777;
+
 $post-content-width: 39;
-$post-image-width: 4;
+$post-image-width: 5;
 $posts-container-width: 6 * $padding + $post-image-width + $post-content-width;
 $post-container-width: 4 * $padding + $post-image-width + $post-content-width;

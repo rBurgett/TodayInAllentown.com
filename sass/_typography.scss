@@ -17,18 +17,25 @@ h6 {
 	font-size: .5em;
 }
 p {
-	font-size: 1em;
+/*	font-size: 1em;
+	line-height: 1.3em; */
+	@include body-font();
 }
 a {
 	text-decoration: none;
 	color: $default-color;
 }
 .post-header {
-	font-family: $header_font;
+/*	font-family: $header_font;
 	font-size: 1.25em;
-	font-weight: bold;
+	font-weight: bold; */
+	@include header-font();
 }
 .post-date {
 	font-size: .9em;
 	font-style: italic;
+}
+.date-weather-note {
+	color: #FFFFFF;
+	text-align: center;
 }

@@ -1,3 +1,10 @@
+.header-image {
+	display: block;
+	margin: auto;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	max-width: 100%;
+}
 .posts-container {
 	width: $posts-container-width + 0em;
 	max-width: 100%;
@@ -18,6 +25,8 @@
 	width: $post-image-width + 0em;
 }
 .post-image {
+	display: block;
+	margin: auto;
 	height: $post-image-width + 0em;
 	width: auto;
 }
@@ -29,6 +38,11 @@
 	p {
 		margin-top: $padding + 0em;
 	}
+}
+.infobar {
+	background-color: #000000;
+	padding-top: .7em;
+	padding-bottom: .7em;
 }
 
 .wfmz {

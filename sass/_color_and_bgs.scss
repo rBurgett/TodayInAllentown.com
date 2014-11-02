@@ -17,3 +17,14 @@
 	background-position: center top;
 	background-size: 100% auto;
 }
+@mixin header-font () {
+	font-family: $header-font;
+	font-size: $header-font-size + 0em;
+	font-weight: bold;
+	line-height: $header-font-size + 0em;
+}
+@mixin body-font () {
+	font-family: $default-font;
+	font-size: $body-font-size + 0em;
+	line-height: $body-font-size + .3 + 0em
+}

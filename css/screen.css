@@ -510,40 +510,63 @@ h6 {
 
 /* line 19, ../sass/_typography.scss */
 p {
+  /*	font-size: 1em;
+  	line-height: 1.3em; */
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1em;
+  line-height: 1.3em;
 }
 
-/* line 22, ../sass/_typography.scss */
+/* line 24, ../sass/_typography.scss */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 26, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 .post-header {
+  /*	font-family: $header_font;
+  	font-size: 1.25em;
+  	font-weight: bold; */
   font-family: Helvetica, sans-serif;
   font-size: 1.25em;
   font-weight: bold;
+  line-height: 1.25em;
 }
 
-/* line 31, ../sass/_typography.scss */
+/* line 34, ../sass/_typography.scss */
 .post-date {
   font-size: .9em;
   font-style: italic;
 }
 
+/* line 38, ../sass/_typography.scss */
+.date-weather-note {
+  color: #FFFFFF;
+  text-align: center;
+}
+
 /* line 1, ../sass/_layout.scss */
+.header-image {
+  display: block;
+  margin: auto;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  max-width: 100%;
+}
+
+/* line 8, ../sass/_layout.scss */
 .posts-container {
-  width: 46em;
+  width: 47em;
   max-width: 100%;
   height: 40em;
   margin: auto;
 }
 
-/* line 7, ../sass/_layout.scss */
+/* line 14, ../sass/_layout.scss */
 .post-container {
   float: left;
-  width: 45;
+  width: 46;
   max-width: 100%;
   margin-top: 10px;
   padding: 0.5em;
@@ -555,45 +578,54 @@ a {
   background-clip: padding-box;
 }
 
-/* line 15, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 .post-image-container {
   float: left;
   padding: 0.5em;
-  width: 4em;
+  width: 5em;
 }
 
-/* line 20, ../sass/_layout.scss */
+/* line 27, ../sass/_layout.scss */
 .post-image {
-  height: 4em;
+  display: block;
+  margin: auto;
+  height: 5em;
   width: auto;
 }
 
-/* line 24, ../sass/_layout.scss */
+/* line 33, ../sass/_layout.scss */
 .post-content-container {
   float: left;
   padding: 0.5em;
   width: 39em;
   max-width: 100%;
 }
-/* line 29, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .post-content-container p {
   margin-top: 0.5em;
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
+.infobar {
+  background-color: #000000;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+/* line 48, ../sass/_layout.scss */
 .wfmz {
-  background-color: #FFFF66;
+  background-color: #FFFF88;
   -webkit-transition: background-color 1000ms;
   /* For Safari 3.1 to 6.0 */
   transition: background-color 1000ms;
 }
 
-/* line 38, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .wfmz:hover {
   background-color: #FFFF00;
 }
 
-/* line 41, ../sass/_layout.scss */
+/* line 55, ../sass/_layout.scss */
 .mcall {
   background-color: #EEEEEE;
   -webkit-transition: background-color 1000ms;
@@ -601,12 +633,12 @@ a {
   transition: background-color 1000ms;
 }
 
-/* line 45, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .mcall:hover {
   background-color: #CCCCCC;
 }
 
-/* line 48, ../sass/_layout.scss */
+/* line 62, ../sass/_layout.scss */
 .lvl {
   background-color: #FFAAAA;
   -webkit-transition: background-color 1000ms;
@@ -614,7 +646,7 @@ a {
   transition: background-color 1000ms;
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 66, ../sass/_layout.scss */
 .lvl:hover {
   background-color: #FF7777;
 }
