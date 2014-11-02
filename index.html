@@ -19,10 +19,27 @@
 	<div class="infobar">
 		<h4 class="weather-note">Date and Weather</h4>
 	</div>
-	<div class="posts-container">
-		<div class="post-container"
-		</div>
+	<div id="posts-container">
 	</div>
+	
+	<!--Handlebars templates start-->
+	
+	<script id="postTemplate" type="text/x-handlebars-template">
+		{{#each}}
+			<div class="post-container">
+				<div class="post-image-container">
+					<img src="public/{{image}}" class="post-image">
+				</div>
+				<div class="post-content-container">
+					<h3>{{title}}</h3>
+					<p>{{content}} <span class=post-date">{{date date}}</span></p>
+				</div>
+			</div>
+		{{/each}}
+	</script>
+	
+	<!--Handlebars templates end-->
+	
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/handlebars.min.js"></script>

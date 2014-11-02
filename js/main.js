@@ -2,6 +2,14 @@
 /* global $ */
 $('#jsnote').hide();
 
+Handlebars.Utils.extend(Handlebars, {
+    make: function(d) {
+        var templateSrc = document.getElementById(d.templateId).innerHTML;
+        var compiledTemplate = Handlebars.compile(templateSrc);
+        var output = compiledTemplate(d.data);
+        document.getElementById(d.htmlId).innerHTML = output;
+    }
+});
 Handlebars.registerHelper('date', function(rawDate) {
 	var formattedDate = new Date(rawDate).toLocaleString();
 	return formattedDate;
@@ -70,5 +78,10 @@ $(document).ready(function () {
 	'use strict';
 	google.setOnLoadCallback(gFeed.getFeeds(20, function (data) {
 		console.log(data);
+		Handlebars.make({
+			'templateId' : 'postTemplate',
+			'data' : data,
+			'htmlId' : 'posts-container'
+		});
 	}));
 });
