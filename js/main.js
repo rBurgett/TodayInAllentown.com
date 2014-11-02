@@ -1,5 +1,6 @@
 /* jshint undef: true, unused: true, strict: true, browser: true, devel: true */
 /* global $ */
+
 $('#jsnote').hide();
 
 Handlebars.Utils.extend(Handlebars, {
@@ -42,6 +43,8 @@ var GFeed = {
 		var feedsData = [];
 		var i;
 		var j;
+		var feedImage;
+		var feedClass;
 		var count = 0;
 		for (i = 0; i < feeds.length; i = i + 1) {
 			feed = new google.feeds.Feed(feeds[i]);
@@ -49,22 +52,37 @@ var GFeed = {
 			feed.includeHistoricalEntries();
 			feed.load(function(feedData) {
 				if (!feedData.error) {
+					if (/wfmz/.test(feedData.feed.entries[0].link)) {
+						feedImage = 'wfmz.png';
+						feedClass = 'wfmz';
+					}
+					if (/mcall/.test(feedData.feed.entries[0].link)) {
+						feedImage = 'mcall.jpeg';
+						feedClass = 'mcall';
+					}
+					if (/lehighvalleylive/.test(feedData.feed.entries[0].link)) {
+						feedImage = 'lvl.gif';
+						feedClass = 'lvl';
+					}
 					for (j = 0; j < feedData.feed.entries.length; j = j + 1) {
+						var date = new Date(feedData.feed.entries[j].publishedDate).getTime();
 						feedsData.push({
 							title: feedData.feed.entries[j].title,
 							link: feedData.feed.entries[j].link,
-							date: feedData.feed.entries[j].publishedDate,
+							date: date,
 							content: feedData.feed.entries[j].contentSnippet,
+							image: feedImage,
+							feedClass: feedClass
 						});
 					}
 					if (count === feeds.length - 1) {
-						callback(feedsData);
+						var sortedData = feedsData.sort(function(a,b){return b.date-a.date});
+						callback(sortedData);
 					}
 					count = count + 1;
 				}
 			});
 		}
-//		console.log(feedsData);
 	}
 };
 var gFeed = GFeed.create([
@@ -72,12 +90,10 @@ var gFeed = GFeed.create([
 		'http://www.mcall.com/news/local/rss2.0.xml',
 		'http://blog.lehighvalleylive.com/lvnews_impact/atom.xml'
 	]);
-//console.log(gFeed.feedList());
 
 $(document).ready(function () {
 	'use strict';
 	google.setOnLoadCallback(gFeed.getFeeds(20, function (data) {
-		console.log(data);
 		Handlebars.make({
 			'templateId' : 'postTemplate',
 			'data' : data,
