@@ -132,5 +132,8 @@ $(document).ready(function () {
 			'data' : data,
 			'htmlId' : 'postsContainer'
 		});
+		$('#loading').hide();
+		$('#postsContainer').show();
+		$('#footerContainer').show();
 	}));
 });

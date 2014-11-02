@@ -5,9 +5,15 @@ body {
 .header-image {
 	display: block;
 	margin: auto;
-	margin-top: .2em;
-	margin-bottom: .2em;
+	margin-top: .4em;
+	margin-bottom: .4em;
 	max-width: 100%;
+}
+.spinner-image {
+	display: block;
+	margin: auto;
+	width: $spinner-size + 0em;
+	height: $spinner-size + 0em;
 }
 .posts-container {
 	width: $posts-container-width + 0em;
@@ -62,9 +68,29 @@ body {
 	z-index: 1;
 	float: left;
 	width: 100%;
-	height: 10em;
+	min-height: 10em;
 	margin-top: -1em;
-	background-color: #0000FF;
+	background-color: #000000;
+	color: #FFFFFF;
+	p {
+		color: #FFFFFF;
+		margin-top: 2em;
+		text-align: center;
+		line-height: 1.5em;
+
+	}
+	a {
+		color: #EEEE00;
+		@include transition(color 750ms);
+	}
+	a:hover {
+		color: #FFBB00;
+	}
+	h3 {
+		margin-top: .2em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
 }
 
 .wfmz {

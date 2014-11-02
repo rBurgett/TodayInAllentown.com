@@ -20,13 +20,20 @@
 	<div class="infobar">
 		<h4 class="date-weather-note">Date and Weather</h4>
 	</div>
-	<div class="posts-container" id="postsContainer">
+	<div id="loading">
+		<img class="spinner-image" src="public/loading_white.gif">
+	</div>
+	<div class="posts-container" id="postsContainer" style="display:none">
 	</div>
 	
-	<div id="footerContainer">
+	<div id="footerContainer" style="display:none;">
 		<div class="footer-slant">
 		</div>
 		<div class="footer">
+			<p>Site designed and built by <a href="http://ryanburgett.com">Ryan Burgett</a>.<br>
+				For your own custom web site or application, visit:</br>
+			</p>
+			<h3><a href="http://ryanburgett.com/professional">RyanBurgett.com</a></h3>
 		</div>
 	</div>
 
@@ -40,8 +47,8 @@
 						<img src="public/{{image}}" class="post-image">
 					</div>
 					<div class="post-content-container">
-						<h3 class="post-header">{{title}}</h3>
-						<p>{{content}} <span class="post-date">{{date date}}</span></p>
+						<h3 class="post-header">{{{title}}}</h3>
+						<p>{{{content}}} <span class="post-date">{{date date}}</span></p>
 					</div>
 				</div>
 			</a>
