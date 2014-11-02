@@ -1,0 +1,49 @@
+.post-container {
+	float: left;
+	margin-top: 10px;
+	padding: $padding;
+	@include border-radius(5px);
+}
+.post-image-container {
+	float: left;
+	padding: $padding;
+	width: $post-image-width + 0em;
+}
+.post-image {
+	height: $post-image-width + 0em;
+	width: auto;
+}
+.post-content-container {
+	float: left;
+	padding: $padding;
+	width: $post-content-width;
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	p {
+		margin-top: 10px;
+	}
+}
+
+.wfmz {
+	background-color: $WFMZbackground;
+	@include transition(background-color 1000ms);
+}
+.wfmz:hover {
+	background-color: $WFMZbackground-hover;
+}
+.mcall {
+	background-color: $MCALLbackground;
+	@include transition(background-color 1000ms);
+}
+.mcall:hover {
+	background-color: $MCALLbackground-hover;
+}
+.lvl {
+	background-color: $LVLbackground;
+	@include transition(background-color 1000ms);
+}
+.lvl:hover {
+	background-color: $LVLbackground-hover;
+}

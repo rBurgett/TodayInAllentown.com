@@ -508,6 +508,104 @@ h6 {
   font-size: .5em;
 }
 
+/* line 19, ../sass/_typography.scss */
+p {
+  font-size: 1em;
+}
+
+/* line 22, ../sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 26, ../sass/_typography.scss */
+.post-date {
+  font-size: .9em;
+  font-style: italic;
+}
+
+/* line 1, ../sass/_layout.scss */
+.post-container {
+  float: left;
+  margin-top: 10px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+
+/* line 7, ../sass/_layout.scss */
+.post-image-container {
+  float: left;
+  padding: 5px;
+  width: 4em;
+}
+
+/* line 12, ../sass/_layout.scss */
+.post-image {
+  height: 4em;
+  width: auto;
+}
+
+/* line 16, ../sass/_layout.scss */
+.post-content-container {
+  float: left;
+  padding: 5px;
+  width: 39em;
+}
+/* line 20, ../sass/_layout.scss */
+.post-content-container h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 24, ../sass/_layout.scss */
+.post-content-container p {
+  margin-top: 10px;
+}
+
+/* line 29, ../sass/_layout.scss */
+.wfmz {
+  background-color: #FFFF66;
+  -webkit-transition: background-color 1000ms;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color 1000ms;
+}
+
+/* line 33, ../sass/_layout.scss */
+.wfmz:hover {
+  background-color: #FFFF00;
+}
+
+/* line 36, ../sass/_layout.scss */
+.mcall {
+  background-color: #EEEEEE;
+  -webkit-transition: background-color 1000ms;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color 1000ms;
+}
+
+/* line 40, ../sass/_layout.scss */
+.mcall:hover {
+  background-color: #CCCCCC;
+}
+
+/* line 43, ../sass/_layout.scss */
+.lvl {
+  background-color: #FFAAAA;
+  -webkit-transition: background-color 1000ms;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color 1000ms;
+}
+
+/* line 47, ../sass/_layout.scss */
+.lvl:hover {
+  background-color: #FF7777;
+}
+
 /* line 14, ../sass/screen.scss */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
