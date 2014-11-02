@@ -26,15 +26,17 @@
 	
 	<script id="postTemplate" type="text/x-handlebars-template">
 		{{#each}}
-			<div class="post-container">
-				<div class="post-image-container">
-					<img src="public/{{image}}" class="post-image">
+			<a href="{{link}}">
+				<div class="post-container">
+					<div class="post-image-container">
+						<img src="public/{{image}}" class="post-image">
+					</div>
+					<div class="post-content-container">
+						<h3>{{title}}</h3>
+						<p>{{content}} <span class=post-date">{{date date}}</span></p>
+					</div>
 				</div>
-				<div class="post-content-container">
-					<h3>{{title}}</h3>
-					<p>{{content}} <span class=post-date">{{date date}}</span></p>
-				</div>
-			</div>
+			</a>
 		{{/each}}
 	</script>
 	
