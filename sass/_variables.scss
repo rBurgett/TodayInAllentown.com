@@ -1,11 +1,14 @@
 $default_font: 'Open Sans', Arial, Helvetica, sans-serif;
+$header_font: Helvetica, sans-serif;
 $default_color: #000000;
-$padding: 5px;
+$padding: .5;
 $WFMZbackground: #FFFF66;
 $WFMZbackground-hover: #FFFF00;
 $MCALLbackground: #EEEEEE;
 $MCALLbackground-hover: #CCCCCC;
 $LVLbackground: #FFAAAA;
 $LVLbackground-hover: #FF7777;
-$post-content-width: 39em;
+$post-content-width: 39;
 $post-image-width: 4;
+$posts-container-width: 6 * $padding + $post-image-width + $post-content-width;
+$post-container-width: 4 * $padding + $post-image-width + $post-content-width;

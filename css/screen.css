@@ -520,54 +520,67 @@ a {
 }
 
 /* line 26, ../sass/_typography.scss */
+.post-header {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* line 31, ../sass/_typography.scss */
 .post-date {
   font-size: .9em;
   font-style: italic;
 }
 
 /* line 1, ../sass/_layout.scss */
-.post-container {
-  float: left;
-  margin-top: 10px;
-  padding: 5px;
-  -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
-  -moz-background-clip: padding;
-  border-radius: 5px;
-  background-clip: padding-box;
+.posts-container {
+  width: 46em;
+  max-width: 100%;
+  height: 40em;
+  margin: auto;
 }
 
 /* line 7, ../sass/_layout.scss */
+.post-container {
+  float: left;
+  width: 45;
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0.5em;
+  -moz-background-clip: padding;
+  border-radius: 0.5em;
+  background-clip: padding-box;
+}
+
+/* line 15, ../sass/_layout.scss */
 .post-image-container {
   float: left;
-  padding: 5px;
+  padding: 0.5em;
   width: 4em;
 }
 
-/* line 12, ../sass/_layout.scss */
+/* line 20, ../sass/_layout.scss */
 .post-image {
   height: 4em;
   width: auto;
 }
 
-/* line 16, ../sass/_layout.scss */
+/* line 24, ../sass/_layout.scss */
 .post-content-container {
   float: left;
-  padding: 5px;
+  padding: 0.5em;
   width: 39em;
+  max-width: 100%;
 }
-/* line 20, ../sass/_layout.scss */
-.post-content-container h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-/* line 24, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 .post-content-container p {
-  margin-top: 10px;
+  margin-top: 0.5em;
 }
 
-/* line 29, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 .wfmz {
   background-color: #FFFF66;
   -webkit-transition: background-color 1000ms;
@@ -575,12 +588,12 @@ a {
   transition: background-color 1000ms;
 }
 
-/* line 33, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .wfmz:hover {
   background-color: #FFFF00;
 }
 
-/* line 36, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 .mcall {
   background-color: #EEEEEE;
   -webkit-transition: background-color 1000ms;
@@ -588,12 +601,12 @@ a {
   transition: background-color 1000ms;
 }
 
-/* line 40, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 .mcall:hover {
   background-color: #CCCCCC;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 48, ../sass/_layout.scss */
 .lvl {
   background-color: #FFAAAA;
   -webkit-transition: background-color 1000ms;
@@ -601,7 +614,7 @@ a {
   transition: background-color 1000ms;
 }
 
-/* line 47, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .lvl:hover {
   background-color: #FF7777;
 }
