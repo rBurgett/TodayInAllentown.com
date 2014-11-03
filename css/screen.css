@@ -740,6 +740,24 @@ body {
     margin: auto;
   }
 }
+@media (max-width: 33em) {
+  /* line 13, ../sass/_mediaqueries.scss */
+  .date-weather-note {
+    text-align: right;
+    font-size: 1em;
+    padding-right: 1em;
+  }
+
+  /* line 18, ../sass/_mediaqueries.scss */
+  #date {
+    display: none;
+  }
+
+  /* line 21, ../sass/_mediaqueries.scss */
+  #dw-dash {
+    display: none;
+  }
+}
 /* line 14, ../sass/screen.scss */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;

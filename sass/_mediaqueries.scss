@@ -8,3 +8,17 @@
 		margin: auto;
 	}
 }
+
+@media (max-width: 33em) {
+	.date-weather-note {
+		text-align: right;
+		font-size: 1em;
+		padding-right: 1em;
+	}
+	#date {
+		display: none;
+	}
+	#dw-dash {
+		display: none;
+	}
+}
