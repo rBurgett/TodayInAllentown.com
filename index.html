@@ -12,7 +12,7 @@
 	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<p id="jsnote">In order to view this page, you must have JavaScript enabled. Please enable JavaScript in your browser and reload the page. Thanks!</p>
+	<p id="jsNote">In order to view this page, you must have JavaScript enabled. Please enable JavaScript in your browser and reload the page. Thanks!</p>
 	<h1 style="display:none;">Today In Allentown</h1>
 	<h2 style="display:none;">What's Happening Now</h2>
 	<p style="display:none;">Welcome to TodayInAllentown.com! This site aggregates news from our top local news sources so you can see what's happing NOW in Allentown.</p>
@@ -56,11 +56,10 @@
 	</script>
 	
 	<!--Handlebars templates end-->
-	
+	<script type="text/javascript">
+		document.getElementById('jsNote').style.display = 'none';
+	</script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<!--script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/handlebars.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script-->
 	<script type="text/javascript" src="js/build/production.min.js"></script>
 <!-- Piwik
 	<script type="text/javascript">

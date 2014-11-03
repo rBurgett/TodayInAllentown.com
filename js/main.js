@@ -1,7 +1,7 @@
 /* jshint loopfunc: true, undef: true, unused: true, browser: true, devel: true */
 /* global $, Handlebars, google */
 
-$('#jsnote').hide();
+//$('#jsnote').hide();
 
 Handlebars.Utils.extend(Handlebars, {
     make: function(d) {
