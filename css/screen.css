@@ -525,34 +525,32 @@ a {
 
 /* line 28, ../sass/_typography.scss */
 .post-header {
-  /*	font-family: $header_font;
-  	font-size: 1.25em;
-  	font-weight: bold; */
   font-family: Helvetica, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: bold;
-  line-height: 1.25em;
+  line-height: 1.2em;
 }
 
-/* line 34, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 .post-date {
   font-size: .9em;
   font-style: italic;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 .date-weather-note {
+  font-size: 1.3em;
   color: #FFFFFF;
   text-align: center;
 }
-/* line 41, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
 .date-weather-note a {
   color: #EEEE00;
   -webkit-transition: color 750ms;
   /* For Safari 3.1 to 6.0 */
   transition: color 750ms;
 }
-/* line 45, ../sass/_typography.scss */
+/* line 43, ../sass/_typography.scss */
 .date-weather-note a:hover {
   color: #FFBB00;
 }

@@ -26,9 +26,6 @@ a {
 	color: $default-color;
 }
 .post-header {
-/*	font-family: $header_font;
-	font-size: 1.25em;
-	font-weight: bold; */
 	@include header-font();
 }
 .post-date {
@@ -36,6 +33,7 @@ a {
 	font-style: italic;
 }
 .date-weather-note {
+	font-size: 1.3em;
 	color: #FFFFFF;
 	text-align: center;
 	a {
