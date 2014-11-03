@@ -38,4 +38,11 @@ a {
 .date-weather-note {
 	color: #FFFFFF;
 	text-align: center;
+	a {
+		color: #EEEE00;
+		@include transition(color 750ms);
+	}
+	a:hover {
+		color: #FFBB00;
+	}
 }

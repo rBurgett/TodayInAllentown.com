@@ -126,6 +126,8 @@ var gFeed = GFeed.create([
 
 $(document).ready(function () {
 	'use strict';
+	var today = new Date();
+	$('#date').html(today.toDateString());
 	google.setOnLoadCallback(gFeed.getFeeds(20, function (data) {
 		Handlebars.make({
 			'templateId' : 'postTemplate',
@@ -136,4 +138,13 @@ $(document).ready(function () {
 		$('#postsContainer').show();
 		$('#footerContainer').show();
 	}));
+	$.ajax({
+		'global': false,
+		'url': 'http://api.openweathermap.org/data/2.5/weather?q=Allentown,PA',
+		'dataType': "json",
+		'success': function (t) {
+		var tF = (18 * (100 * t.main.temp - 27315)) / 1000 + 32;
+		$('#temp').html(tF.toFixed() + '°F');
+		$('#tempContainer').show();
+	}});
 });

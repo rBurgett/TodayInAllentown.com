@@ -545,6 +545,17 @@ a {
   color: #FFFFFF;
   text-align: center;
 }
+/* line 41, ../sass/_typography.scss */
+.date-weather-note a {
+  color: #EEEE00;
+  -webkit-transition: color 750ms;
+  /* For Safari 3.1 to 6.0 */
+  transition: color 750ms;
+}
+/* line 45, ../sass/_typography.scss */
+.date-weather-note a:hover {
+  color: #FFBB00;
+}
 
 /* line 1, ../sass/_layout.scss */
 body {
@@ -572,7 +583,7 @@ body {
 /* line 18, ../sass/_layout.scss */
 .posts-container {
   width: 47em;
-  max-width: 100%;
+  /*	max-width: 80%; */
   height: 40em;
   margin: auto;
 }
@@ -716,6 +727,19 @@ body {
   background-color: #FF7777;
 }
 
+@media (max-width: 48em) {
+  /* line 2, ../sass/_mediaqueries.scss */
+  .post-image-container {
+    display: none;
+  }
+
+  /* line 5, ../sass/_mediaqueries.scss */
+  .posts-container {
+    width: 41em;
+    max-width: 85%;
+    margin: auto;
+  }
+}
 /* line 14, ../sass/screen.scss */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;

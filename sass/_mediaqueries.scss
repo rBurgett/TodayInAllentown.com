@@ -1,0 +1,10 @@
+@media (max-width: $posts-container-width + 1 + 0em) {
+	.post-image-container {
+		display: none;
+	}
+	.posts-container {
+		width: $posts-container-width - $post-image-width - 2 * $padding + 0em;
+		max-width: 85%;
+		margin: auto;
+	}
+}
