@@ -555,6 +555,20 @@ a {
   color: #FFBB00;
 }
 
+/* line 47, ../sass/_typography.scss */
+.note-button {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  float: right;
+  color: #FF0000;
+  padding-left: .75em;
+  padding-right: .75em;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -.055em;
+}
+
 /* line 1, ../sass/_layout.scss */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -633,9 +647,10 @@ body {
   background-color: #000000;
   padding-top: .5em;
   padding-bottom: .5em;
+  min-height: 1.3em;
 }
 
-/* line 57, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .footer-slant {
   z-index: -1;
   margin-top: 1.5em;
@@ -651,7 +666,7 @@ body {
   transform: rotate(1deg);
 }
 
-/* line 67, ../sass/_layout.scss */
+/* line 68, ../sass/_layout.scss */
 .footer {
   z-index: 1;
   float: left;
@@ -661,25 +676,25 @@ body {
   background-color: #000000;
   color: #FFFFFF;
 }
-/* line 75, ../sass/_layout.scss */
+/* line 76, ../sass/_layout.scss */
 .footer p {
   color: #FFFFFF;
   margin-top: 2em;
   text-align: center;
   line-height: 1.5em;
 }
-/* line 82, ../sass/_layout.scss */
+/* line 83, ../sass/_layout.scss */
 .footer a {
   color: #EEEE00;
   -webkit-transition: color 750ms;
   /* For Safari 3.1 to 6.0 */
   transition: color 750ms;
 }
-/* line 86, ../sass/_layout.scss */
+/* line 87, ../sass/_layout.scss */
 .footer a:hover {
   color: #FFBB00;
 }
-/* line 89, ../sass/_layout.scss */
+/* line 90, ../sass/_layout.scss */
 .footer h3 {
   margin-top: .2em;
   margin-bottom: 1em;
@@ -687,6 +702,71 @@ body {
 }
 
 /* line 96, ../sass/_layout.scss */
+.note-shade {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.65);
+}
+
+/* line 104, ../sass/_layout.scss */
+.note {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -17em;
+  margin-top: -10.5em;
+  width: 30em;
+  max-width: 100%;
+  min-height: 17em;
+  padding: 2em;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+/* line 120, ../sass/_layout.scss */
+.note p {
+  margin-top: 1.75em;
+  line-height: 1.4em;
+}
+/* line 124, ../sass/_layout.scss */
+.note h3 {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+/* line 128, ../sass/_layout.scss */
+.note a {
+  font-size: 1.5em;
+  color: #444444;
+}
+/* line 132, ../sass/_layout.scss */
+.note a:hover {
+  text-decoration: underline;
+}
+
+/* line 136, ../sass/_layout.scss */
+.close-dialog {
+  width: 1.5em;
+  height: 1.5em;
+  float: right;
+  cursor: pointer;
+  margin-top: -1em;
+  margin-right: -1em;
+}
+
+/* line 144, ../sass/_layout.scss */
+.close-dialog:hover {
+  opacity: .75;
+}
+
+/* line 148, ../sass/_layout.scss */
 .wfmz {
   background-color: #FFFF88;
   -webkit-transition: background-color 1000ms;
@@ -694,12 +774,12 @@ body {
   transition: background-color 1000ms;
 }
 
-/* line 100, ../sass/_layout.scss */
+/* line 152, ../sass/_layout.scss */
 .wfmz:hover {
   background-color: #FFFF00;
 }
 
-/* line 103, ../sass/_layout.scss */
+/* line 155, ../sass/_layout.scss */
 .mcall {
   background-color: #EEEEEE;
   -webkit-transition: background-color 1000ms;
@@ -707,12 +787,12 @@ body {
   transition: background-color 1000ms;
 }
 
-/* line 107, ../sass/_layout.scss */
+/* line 159, ../sass/_layout.scss */
 .mcall:hover {
   background-color: #CCCCCC;
 }
 
-/* line 110, ../sass/_layout.scss */
+/* line 162, ../sass/_layout.scss */
 .lvl {
   background-color: #FFAAAA;
   -webkit-transition: background-color 1000ms;
@@ -720,7 +800,7 @@ body {
   transition: background-color 1000ms;
 }
 
-/* line 114, ../sass/_layout.scss */
+/* line 166, ../sass/_layout.scss */
 .lvl:hover {
   background-color: #FF7777;
 }

@@ -44,3 +44,15 @@ a {
 		color: #FFBB00;
 	}
 }
+.note-button {
+	cursor:pointer;
+	display:block;
+	position:relative;
+	float:right;
+	color:#FF0000;
+	padding-left:.75em;
+	padding-right:.75em;
+	font-weight:bold;
+	font-size:1.5em;
+	margin-top:-.055em;
+}

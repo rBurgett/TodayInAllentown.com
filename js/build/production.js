@@ -148,3 +148,12 @@ $(document).ready(function () {
 		$('#tempContainer').show();
 	}});
 });
+$('#noteButton').click(function () {
+	$('#noteContainer').show();
+});
+$('#noteShade').click(function () {
+	$('#noteContainer').hide();
+});
+$('#closeDialog').click(function() {
+	$('#noteContainer').hide();
+});
