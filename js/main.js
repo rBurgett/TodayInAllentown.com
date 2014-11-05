@@ -116,7 +116,7 @@ $(document).ready(function () {
 	}});
 });
 $('#noteButton').click(function () {
-	$('#noteContainer').show();
+	$('#noteContainer').show(150);
 });
 $('#noteShade').click(function () {
 	$('#noteContainer').hide();

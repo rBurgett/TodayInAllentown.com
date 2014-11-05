@@ -567,6 +567,14 @@ a {
   font-weight: bold;
   font-size: 1.5em;
   margin-top: -.055em;
+  -webkit-transition: color 750ms;
+  /* For Safari 3.1 to 6.0 */
+  transition: color 750ms;
+}
+
+/* line 60, ../sass/_typography.scss */
+.note-button:hover {
+  color: #FFBB00;
 }
 
 /* line 1, ../sass/_layout.scss */

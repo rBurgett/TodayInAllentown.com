@@ -55,4 +55,8 @@ a {
 	font-weight:bold;
 	font-size:1.5em;
 	margin-top:-.055em;
+	@include transition(color 750ms);
 }
+.note-button:hover {
+		color: #FFBB00;
+	}
