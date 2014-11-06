@@ -844,6 +844,25 @@ body {
     display: none;
   }
 }
+@media (max-width: 34em) {
+  /* line 27, ../sass/_mediaqueries.scss */
+  .note {
+    margin-left: -8.5em;
+    width: 15em;
+    padding: 1em;
+    top: 2em;
+    margin-top: auto;
+    height: auto;
+  }
+  /* line 34, ../sass/_mediaqueries.scss */
+  .note h3 {
+    font-size: 1.3em;
+  }
+  /* line 37, ../sass/_mediaqueries.scss */
+  .note a {
+    font-size: .9em;
+  }
+}
 /* line 14, ../sass/screen.scss */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
