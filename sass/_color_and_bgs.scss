@@ -22,9 +22,9 @@
 	background-position: center top;
 	background-size: 100% auto;
 }
-@mixin header-font () {
+@mixin header-font ($size) {
 	font-family: $header-font;
-	font-size: $header-font-size + 0em;
+	font-size: $size + 0em;
 	font-weight: bold;
 	line-height: $header-font-size + 0em;
 }

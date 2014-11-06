@@ -40,6 +40,16 @@ body {
 	height: $post-image-width + 0em;
 	width: auto;
 }
+.inner-post-image {
+	display: none;
+	float: left;
+	margin-left: 0;
+	padding-right: 2 * $padding + 0em;
+	margin-top: 0;
+	padding-bottom: $padding + 0em;
+	height: $post-image-width + 0em;
+	width: auto;
+}
 .post-content-container {
 	float: left;
 	padding: $padding + 0em;

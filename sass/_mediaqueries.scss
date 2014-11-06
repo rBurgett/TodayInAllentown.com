@@ -2,25 +2,35 @@
 	.post-image-container {
 		display: none;
 	}
+	.inner-post-image {
+		display: block;
+	}
 	.posts-container {
 		width: $posts-container-width - $post-image-width - 2 * $padding + 0em;
 		max-width: 85%;
 		margin: auto;
 	}
+	.post-header {
+		@include header-font($header-font-size - .1);
+	}
+	p {
+		font-size: $body-font-size - .1 + 0em;
+	}
 }
 
 @media (max-width: 33em) {
 	.date-weather-note {
-		text-align: right;
-		font-size: 1em;
-		padding-right: 1em;
+		text-align: left;
+		font-size: 1.1em;
+		padding-left: .5em;
+		padding-top: .1em;
 	}
-	#date {
+/*	#date {
 		display: none;
 	}
 	#dw-dash {
 		display: none;
-	}
+	} */
 }
 
 @media (max-width: 8 * $padding + $note-width + 0em) {

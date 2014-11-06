@@ -26,7 +26,7 @@ a {
 	color: $default-color;
 }
 .post-header {
-	@include header-font();
+	@include header-font($header-font-size);
 }
 .post-date {
 	font-size: .9em;
