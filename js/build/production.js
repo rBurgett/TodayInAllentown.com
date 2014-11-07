@@ -49,6 +49,7 @@ Handlebars.Utils.extend(Handlebars, {
         var templateSrc = document.getElementById(d.templateId).innerHTML;
         var compiledTemplate = Handlebars.compile(templateSrc);
         var output = compiledTemplate(d.data);
+		console.log(output);
         document.getElementById(d.htmlId).innerHTML = output;
     }
 });
